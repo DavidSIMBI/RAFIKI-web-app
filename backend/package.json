@@ -1,0 +1,21 @@
+{
+  "name": "rafiki-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --legacy-watch --watch src src/server.js",
+    "start": "node src/server.js",
+    "db:migrate": "node database/scripts/migrate.js",
+    "db:status": "node database/scripts/status.js",
+    "db:verify": "node database/scripts/verify.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
